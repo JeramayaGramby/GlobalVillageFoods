@@ -15,10 +15,15 @@ def login():
 '''Logout Page'''
 @auth.route('/logout')
 def logout():
-    return "<h1>You have logged out!</h1>"
+    return render_template("login.html",
+        title = 'Login',
+        user = 'user',
+        posts = 'posts')
 
 '''Signup Page'''
 @auth.route('/sign-up')
 def sign_up():
-    return "<h1>Sign Up Now!</h1>"
-
+    return render_template("sign_up.html",
+        title = 'Login',
+        user = 'user',
+        posts = 'posts')
