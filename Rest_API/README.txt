@@ -10,9 +10,6 @@ Instructions:
 
 2. Run main.py then execute test.py.
 
-2. DO NOT execute "db.create_all" in the main API unless you need to delete the entire db, reconfigure the database or 
-launch the entire app into production. Otherwise you will overwrite your database!
-
 3. DO NOT execute database_creator.py UNLESS personal_information.db did not previously exist.
 
 4. Ensure that all necessary dependencies are installed.
