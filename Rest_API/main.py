@@ -50,7 +50,7 @@ class HelloWorld(Resource):
             abort(404, message="Could not find data with that ID")
         return result
     
-    '''The arguments (user input) are parsed and then are sent in the put request'''
+    
     @marshal_with(resource_fields)
     def patch(self, data_id):
         args = user_input_data_put_args.parse_args()
